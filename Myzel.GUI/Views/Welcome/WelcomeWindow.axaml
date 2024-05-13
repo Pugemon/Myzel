@@ -1,0 +1,75 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:Myzel.GUI.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Myzel.GUI.Views.Welcome.WelcomeWindow"
+             x:DataType="vm:WelcomeWindowViewModel">
+    
+    <Grid RowDefinitions="70, *" ShowGridLines="False" ColumnDefinitions="250,*">
+        <!-- Left Up --> 
+        <Panel Background="#051130" Grid.Row="0" Grid.Column="0"> 
+            <TextBlock Foreground="white" TextAlignment="Center" FontSize="18" FontWeight="Bold" Padding="0, 20"> Myzel </TextBlock>
+        </Panel>
+        <!-- Right Up -->
+        <Panel Background="#222" Grid.Column="1" Grid.Row="0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Spacing="10" Margin="25, 20">
+                <!-- TODO: Add Links here -->
+                <Button Name="GithubButton" Foreground="#2c4cf1" FontSize="15" Background="Transparent" Width="110" Margin="1,0" Command="{Binding OpenLinkCommand}" CommandParameter="https://github.com/cabiste69/CatAppTuto"> Github</Button>
+                <Button Name="AboutButton" Foreground="#2c4cf1" FontSize="15" Background="Transparent" Width="105" Margin="1,0" Command="{Binding OpenLinkCommand}" CommandParameter="https://github.com/cabiste69/Guides"> About</Button>
+            </StackPanel>
+        </Panel>
+        <!-- Left Center -->
+        <Panel Grid.Column="0" Grid.Row="1">
+            <StackPanel Name="SideBar" Spacing="10" Margin="20, 20">
+                <Button Name="ButtonHome" Command="{Binding ChangeContentCommand}" CommandParameter="Home">Home</Button>
+                <Button Name="ButtonProjects" Command="{Binding ChangeContentCommand}" CommandParameter="Projects">Projects</Button>
+                <Button Name="ButtonDictionaries" Command="{Binding ChangeContentCommand}" CommandParameter="Dictionaries">Dictionaries</Button>
+            </StackPanel>
+            <Button Name="ButtonSettings" VerticalAlignment="Bottom" Margin="20, 20" Command="{Binding ChangeContentCommand}" CommandParameter="Settings">Settings</Button>
+        </Panel>
+        
+        <!-- Style -->
+        <Panel.Background>
+            <LinearGradientBrush StartPoint="0%,0%" EndPoint="0%,100%">
+                <GradientStop Offset="0" Color="#0d194c" />
+                <GradientStop Offset="1" Color="#2e0539" />
+            </LinearGradientBrush>
+        </Panel.Background>
+        
+        <!-- Content area -->
+        <UserControl Background="#181a1b" Grid.Column="1" Grid.Row="1" Content="{Binding MainContentAreaContent}" Name="MainContentArea">
+        </UserControl>
+    </Grid>
+    
+    
+    
+    <UserControl.Resources>
+        <!-- ReSharper disable once Xaml.RedundantResource -->
+        <ControlTheme x:Key="{x:Type Button}" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="30, 7"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Template">
+                <ControlTemplate>
+                    <Border Background="{TemplateBinding Background}"
+                            CornerRadius="5"
+                            BorderThickness="1"
+                            BorderBrush="Transparent">
+                        <ContentPresenter x:Name="PART_ContentPresenter"
+                                          Content="{TemplateBinding Content}"
+                                          Margin="{TemplateBinding Padding}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter>
+  
+            <Style Selector="^:pointerover">
+                <Setter Property="Background" Value="#0AFFFFFF"/>
+                <Setter Property="Foreground" Value="White"/>
+            </Style>
+        </ControlTheme>
+    </UserControl.Resources>
+</UserControl>

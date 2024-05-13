@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myzel.GUI", "Myzel.GUI\Myzel.GUI.csproj", "{79194186-8AA9-4DBA-8EFA-4C68F5EEBA4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myzel.Core", "Myzel.Core\Myzel.Core.csproj", "{00EA4185-B4CC-431E-A0D4-F3EADDFDBBDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Myzel.Lib", "Myzel.Lib", "{BA0F2BEA-8957-473E-8E9D-E13000199A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myzel.Lib", "Myzel.Lib\Myzel.Lib.csproj", "{B1385480-7D68-4B53-92CB-870926020B5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myzel.GUI.Essentials", "Myzel.GUI.Essentials\Myzel.GUI.Essentials.csproj", "{7FF4D3ED-C43C-4B07-AC92-F5191EB2381D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79194186-8AA9-4DBA-8EFA-4C68F5EEBA4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79194186-8AA9-4DBA-8EFA-4C68F5EEBA4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79194186-8AA9-4DBA-8EFA-4C68F5EEBA4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79194186-8AA9-4DBA-8EFA-4C68F5EEBA4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00EA4185-B4CC-431E-A0D4-F3EADDFDBBDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00EA4185-B4CC-431E-A0D4-F3EADDFDBBDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00EA4185-B4CC-431E-A0D4-F3EADDFDBBDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00EA4185-B4CC-431E-A0D4-F3EADDFDBBDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1385480-7D68-4B53-92CB-870926020B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1385480-7D68-4B53-92CB-870926020B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1385480-7D68-4B53-92CB-870926020B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1385480-7D68-4B53-92CB-870926020B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FF4D3ED-C43C-4B07-AC92-F5191EB2381D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FF4D3ED-C43C-4B07-AC92-F5191EB2381D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FF4D3ED-C43C-4B07-AC92-F5191EB2381D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FF4D3ED-C43C-4B07-AC92-F5191EB2381D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B1385480-7D68-4B53-92CB-870926020B5E} = {BA0F2BEA-8957-473E-8E9D-E13000199A74}
+	EndGlobalSection
+EndGlobal

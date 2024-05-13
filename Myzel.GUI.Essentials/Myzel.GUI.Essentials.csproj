@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="Avalonia.Base">
+        <HintPath>..\Myzel\bin\Debug\net8.0\Avalonia.Base.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Avalonia.AvaloniaEdit" Version="11.0.6" />
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+      <PackageReference Include="Dock.Model.Mvvm" Version="11.0.0.7" />
+      <PackageReference Include="DynamicData" Version="7.9.5" />
+      <PackageReference Include="OmniSharp.Extensions.LanguageServer" Version="0.19.9" />
+    </ItemGroup>
+
+</Project>

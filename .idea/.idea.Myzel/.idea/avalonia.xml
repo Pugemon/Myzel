@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Myzel/App.axaml" value="Myzel/Myzel.csproj" />
+        <entry key="Myzel/Views/EditorWindow.axaml" value="Myzel/Myzel.csproj" />
+        <entry key="Myzel/Views/MainWindow.axaml" value="Myzel/Myzel.csproj" />
+        <entry key="Myzel/Views/Welcome/Views/Home.axaml" value="Myzel/Myzel.csproj" />
+        <entry key="Myzel/Views/Welcome/Views/Projects.axaml" value="Myzel/Myzel.csproj" />
+        <entry key="Myzel/Views/Welcome/WelcomeWindow.axaml" value="Myzel/Myzel.csproj" />
+        <entry key="Myzel/Views/WelcomeWindow.axaml" value="Myzel/Myzel.csproj" />
+        <entry key="Myzel/Views/WelcomeWindow/WMainContentArea.axaml" value="Myzel/Myzel.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

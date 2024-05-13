@@ -1,0 +1,30 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ae="clr-namespace:AvaloniaEdit;assembly=AvaloniaEdit"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Myzel.GUI.Views.EditorWindow"
+        Title="Myzel Editor"
+        Icon="/Assets/myzel-logo.ico">
+    
+        
+        <DockPanel>
+        <StackPanel Name="StatusBar" Background="Purple" Height="25" DockPanel.Dock="Bottom" Orientation="Horizontal">
+            <TextBlock Foreground="White" Name="StatusText" Text="Ready" Margin="5 0 0 0" VerticalAlignment="Center" FontSize="12"/>
+        </StackPanel>
+            
+            
+            <ae:TextEditor x:Name="EditorText"
+                           Margin="0"
+                           Background="#2B2B2B"
+                           Foreground="AntiqueWhite"
+                           HorizontalScrollBarVisibility="Auto"
+                           VerticalScrollBarVisibility="Auto"
+                           FontFamily="{DynamicResource CodeFontFamily}" 
+                           FontWeight="Normal" 
+                           FontSize="14"
+                           WordWrap="False">
+            </ae:TextEditor>
+    </DockPanel>
+</Window>
